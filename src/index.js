@@ -9,27 +9,16 @@ import * as serviceWorker from './serviceWorker';
 serviceWorker.unregister();
 
 
-const title = React.createElement(
-    'h1',
-    {id: 'main-title', title: 'This is a title.'},
+const title = <h1>My First React Element</h1>;
+const desc = <p>I just learned how to create a React node and Render
+     it into the DOM.</p>;
 
-    'My First React Element!'
-);
-
-const desc = React.createElement(
-
-    'p',
-    null,
-    'I just learned how to create a React node and Render' +
-    ' it into the DOM.'
-
-);
-
-const header = React.createElement(
-    'header',
-    null,
-    title,
-    desc
+const header = (
+    <header>
+        <h1> My First React Element</h1>
+        <p>I just learned how to create a React node and Render
+            it into the DOM.</p>
+    </header>
 );
 
 ReactDOM.render(
